@@ -22,7 +22,7 @@
           <li class="main-nav__item"><a href="#" class="main-nav__link">Доставка и оплата</a></li>
           <li class="main-nav__item"><a href="#" class="main-nav__link">Отзывы</a></li>
           <li class="main-nav__item"><a href="#" class="main-nav__link">Спецпредложения</a></li>
-          <li class="main-nav__item"><a href="#" class="main-nav__link">Контакты</a></li>
+          <li class="main-nav__item"><a href="#contacts" class="main-nav__link">Контакты</a></li>
           <li class="main-nav__item"><a href="#" class="main-nav__link">Корзина</a></li>
         </ul>
       </nav>
@@ -35,7 +35,7 @@
 
       <section class="banner">
         <div class="banner__right">
-          <h2 class="banner__title">Авторские букеты в Петербурге</h2>
+          <h2 class="banner__title">Авторские букеты <span class="banner__title--italic">в Петербурге</span></h2>
           <p class="banner__desc">Оригинальные свежие букеты с доставкой по всему городу</p>
           <a class="banner__btn btn" href="#">Смотреть каталог</a>
         </div>
@@ -73,7 +73,8 @@
             <li class="popular__item card">
               <div class="card__right">
                 <p class="card__title">Букет «Нежность»</p>
-                <p class="card__text">Элегантный букет, который станет отличным подарком на день рождения или юбилей.</p>
+                <p class="card__text">Элегантный букет, который станет отличным подарком на день рождения или юбилей.
+                </p>
                 <p class="card__info">30 × 40 см</p>
                 <p class="card__price">3600 руб.</p>
                 <button class="card__btn btn">Заказать</button>
@@ -99,50 +100,58 @@
         <ul class="catalog__list">
           <li class="catalog__item catalog-card">
             <a href="#" class="catalog-card__link">
-              <img class="catalog-card__img" src="./img/catalog-card-1.jpg" height="442px" width="100%" alt="Свадебные букеты" >
-              <p class="catalog-card__title">Свадебные букеты</p>
-              <p class="catalog-card__text">Букеты для невест</p>
+              <img class="catalog-card__img" src="./img/catalog-card-1.jpg" alt="Свадебные букеты" height="442px">
+              <div class="catalog-card__info">
+                <p class="catalog-card__title">Свадебные букеты</p>
+                <p class="catalog-card__text">Букеты для невест</p>
+              </div>
             </a>
           </li>
           <li class="catalog__item catalog-card">
             <a href="#" class="catalog-card__link">
-              <img class="catalog-card__img" src="./img/catalog-card-2.jpg" height="442px" width="100%" alt="Свадебные букеты" >
-              <p class="catalog-card__title">Букеты с пионами</p>
-              <p class="catalog-card__text">Букеты с сезонными пионами</p>
+              <img class="catalog-card__img" src="./img/catalog-card-2.jpg" alt="Букеты с пионами" height="442px">
+              <div class="catalog-card__info">
+                <p class="catalog-card__title">Букеты с пионами</p>
+                <p class="catalog-card__text">Букеты с сезонными пионами</p>
+              </div>
             </a>
           </li>
           <li class="catalog__item catalog-card">
             <a href="#" class="catalog-card__link">
-              <img class="catalog-card__img" src="./img/catalog-card-3.jpg" height="442px" width="100%" alt="Свадебные букеты" >
-              <p class="catalog-card__title">Выбрать букет</p>
-              <p class="catalog-card__text">Букеты в ассортименте</p>
+              <img class="catalog-card__img" src="./img/catalog-card-3.jpg" alt="Выбрать букет" height="442px">
+              <div class="catalog-card__info">
+                <p class="catalog-card__title">Выбрать букет</p>
+                <p class="catalog-card__text">Букеты в ассортименте</p>
+              </div>
             </a>
           </li>
         </ul>
       </section>
 
       <section class="discount">
-        <h2 class="discount__title">Скидка 10% на первый заказ</h2>
-        <p class="discount__desc">Если заказываете у нас букет впервые — при оформлении заказа введите промокод
-          «Botanika2021» и получите скидку 10%.</p>
+        <div class="discount__wrapper">
+          <h2 class="discount__title">Скидка 10%<br> на первый заказ</h2>
+          <p class="discount__desc">Если заказываете у нас букет впервые — при оформлении заказа введите промокод
+            «Botanika2021» и получите скидку 10%.</p>
+        </div>
       </section>
 
       <section class="steps">
         <h2 class="steps__title">4 шага к идеальному букету</h2>
         <ul class="steps__list">
-          <li class="steps__item step">
+          <li class="steps__item step step--order">
             <p class="step__title">Заказ</p>
-            <p class="step__text">Выбирите понравившейся букет из каталога и оформите заказ</p>
+            <p class="step__text">Выберите понравившейся букет из каталога и оформите заказ</p>
           </li>
-          <li class="steps__item step">
+          <li class="steps__item step step--details">
             <p class="step__title">Уточнение деталей</p>
             <p class="step__text">Наш флорист позвонит вам после оформления заказа, чтобы уточнить детали</p>
           </li>
-          <li class="steps__item step">
+          <li class="steps__item step step--pay">
             <p class="step__title">Оплата</p>
             <p class="step__text">Оплатить заказ можно онлайн на сайте или при получении</p>
           </li>
-          <li class="steps__item step">
+          <li class="steps__item step step--delivery">
             <p class="step__title">Доставка</p>
             <p class="step__text">Курьер позвонит за час до прибытия и доставит заказ вовремя</p>
           </li>
@@ -152,7 +161,7 @@
       <section class="news">
         <div class="news__right">
           <h2 class="news__title">Следите за нашими новостями</h2>
-          <p class="news__desc">Подписывайтесь на наши соцсети и узнавайте о новинках и акциях первым.</p>
+          <p class="news__desc">Подписывайтесь на наши соцсети и узнавайте<br> о новинках и акциях первым.</p>
 
           <div class="news__socials news-socials">
             <ul class="news-socials__list socials">
@@ -204,7 +213,7 @@
       </section>
     </div>
 
-    <section class="contacts">
+    <section class="contacts" id="contacts">
       <h2 class="contacts__title visually-hidden">Контакты</h2>
       <div class="contacts__map">
         <div style="position:relative;overflow:hidden;"><a
@@ -219,11 +228,11 @@
         <!-- <img src="./img/map.png" class="contacts__map-img" width="1440px" height="644px" alt="карта"> -->
       </div>
 
-      <div class="contacts__info contacts__info">
+      <div class="contacts__info">
         <p class="contacts__desc">Мы ждем вас</p>
 
         <p class="contacts__item">Приходите к нам:</p>
-        <p class="contacts__text">Санкт-Петербург, ул. Большая Конюшенная, 19</p>
+        <p class="contacts__text">Санкт-Петербург, ул.&nbsp;Большая Конюшенная, 19</p>
 
         <p class="contacts__item">Режим работы:</p>
         <p class="contacts__text">Пн-Вск, с 9-00 до 20-00</p>
@@ -245,11 +254,11 @@
         </a>
 
         <ul class="footer-nav">
-          <li class="footer-nav__item">Каталог</li>
-          <li class="footer-nav__item">Доставка и оплата</li>
-          <li class="footer-nav__item">Отзывы</li>
-          <li class="footer-nav__item">Спецпредложения</li>
-          <li class="footer-nav__item">Контакты</li>
+          <li class="footer-nav__item"><a href="#" class="footer-nav__link">Каталог</a></li>
+          <li class="footer-nav__item"><a href="#" class="footer-nav__link">Доставка и оплата</a></li>
+          <li class="footer-nav__item"><a href="#" class="footer-nav__link">Отзывы</a></li>
+          <li class="footer-nav__item"><a href="#" class="footer-nav__link">Спецпредложения</a></li>
+          <li class="footer-nav__item"><a href="#" class="footer-nav__link">Контакты</a></li>
         </ul>
 
         <ul class="footer-socials socials">
