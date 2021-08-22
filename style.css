@@ -8,6 +8,51 @@
   --socials-color: #D89999;
 }
 
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./fonts/Montserrat-Regular.woff2') format('woff2'),
+       url('./fonts/Montserrat-Regular.woff') format('woff'),
+       url('./fonts/Montserrat-Regular.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  src: url('./fonts/Montserrat-Medium.woff2') format('woff2'),
+       url('./fonts/Montserrat-Medium.woff') format('woff'),
+       url('./fonts/Montserrat-Medium.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./fonts/PlayfairDisplay-Regular.woff2') format('woff2'),
+       url('./fonts/PlayfairDisplay-Regular.woff') format('woff'),
+       url('./fonts/PlayfairDisplay-Regular.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: italic;
+  font-weight: 400;
+  src: url('./fonts/PlayfairDisplay-Italic.woff2') format('woff2'),
+       url('./fonts/PlayfairDisplay-Italic.woff') format('woff'),
+       url('./fonts/PlayfairDisplay-Italic.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 700;
+  src: url('./fonts/PlayfairDisplay-Bold.woff2') format('woff2'),
+       url('./fonts/PlayfairDisplay-Bold.woff') format('woff'),
+       url('./fonts/PlayfairDisplay-Bold.ttf') format("truetype");
+}
+
 * {
   box-sizing: border-box;
 }
@@ -54,6 +99,7 @@ img {
   color: var(--btn-text-color);
   text-decoration: none;
   font-family: 'Montserrat', sans-serif;
+  font-style: normal;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
@@ -244,6 +290,7 @@ img {
   margin: 0 0 36px;
   padding: 0;
   font-family: 'Playfair Display', serif;
+  font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 48px;
@@ -352,7 +399,7 @@ img {
 }
 
 .catalog-card::after {
-  content: "";
+  content: '';
   position: absolute;
   display: block;
   width: 100%;
