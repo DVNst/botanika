@@ -5,52 +5,47 @@
   --btn-bg-color: #d89999;
   --btn-bg-color-hover: #c98d8d;
   --btn-text-color: #ffffff;
-  --socials-color: #D89999;
+  --socials-color: #d89999;
 }
 
 @font-face {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
-  src: url('./fonts/Montserrat-Regular.woff2') format('woff2'),
-       url('./fonts/Montserrat-Regular.woff') format('woff'),
-       url('./fonts/Montserrat-Regular.ttf') format("truetype");
+  font-display: swap;
+  src: url('./fonts/Montserrat-Regular.woff2') format('woff2'), url('./fonts/Montserrat-Regular.woff') format('woff'), url('./fonts/Montserrat-Regular.ttf') format("truetype");
 }
 
 @font-face {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
-  src: url('./fonts/Montserrat-Medium.woff2') format('woff2'),
-       url('./fonts/Montserrat-Medium.woff') format('woff'),
-       url('./fonts/Montserrat-Medium.ttf') format("truetype");
+  font-display: swap;
+  src: url('./fonts/Montserrat-Medium.woff2') format('woff2'), url('./fonts/Montserrat-Medium.woff') format('woff'), url('./fonts/Montserrat-Medium.ttf') format("truetype");
 }
 
 @font-face {
   font-family: 'Playfair Display';
   font-style: normal;
   font-weight: 400;
-  src: url('./fonts/PlayfairDisplay-Regular.woff2') format('woff2'),
-       url('./fonts/PlayfairDisplay-Regular.woff') format('woff'),
-       url('./fonts/PlayfairDisplay-Regular.ttf') format("truetype");
+  font-display: swap;
+  src: url('./fonts/PlayfairDisplay-Regular.woff2') format('woff2'), url('./fonts/PlayfairDisplay-Regular.woff') format('woff'), url('./fonts/PlayfairDisplay-Regular.ttf') format("truetype");
 }
 
 @font-face {
   font-family: 'Playfair Display';
   font-style: italic;
   font-weight: 400;
-  src: url('./fonts/PlayfairDisplay-Italic.woff2') format('woff2'),
-       url('./fonts/PlayfairDisplay-Italic.woff') format('woff'),
-       url('./fonts/PlayfairDisplay-Italic.ttf') format("truetype");
+  font-display: swap;
+  src: url('./fonts/PlayfairDisplay-Italic.woff2') format('woff2'), url('./fonts/PlayfairDisplay-Italic.woff') format('woff'), url('./fonts/PlayfairDisplay-Italic.ttf') format("truetype");
 }
 
 @font-face {
   font-family: 'Playfair Display';
   font-style: normal;
   font-weight: 700;
-  src: url('./fonts/PlayfairDisplay-Bold.woff2') format('woff2'),
-       url('./fonts/PlayfairDisplay-Bold.woff') format('woff'),
-       url('./fonts/PlayfairDisplay-Bold.ttf') format("truetype");
+  font-display: swap;
+  src: url('./fonts/PlayfairDisplay-Bold.woff2') format('woff2'), url('./fonts/PlayfairDisplay-Bold.woff') format('woff'), url('./fonts/PlayfairDisplay-Bold.ttf') format("truetype");
 }
 
 * {
@@ -104,6 +99,7 @@ img {
   line-height: 20px;
   font-weight: 400;
   border: none;
+  cursor: pointer;
 }
 
 .btn:hover {
@@ -322,10 +318,20 @@ img {
   background-size: cover;
   background-color: transparent;
   border: none;
+  cursor: pointer;
+  transition: margin 250ms ease-out;
+}
+
+.popular__arrow:hover {
+  margin: 0 5px 0 15px;
 }
 
 .popular__arrow--back {
   transform: rotate(180deg);
+}
+
+.popular__arrow--back:hover {
+  margin: 0 15px 0 5px;
 }
 
 .card {
@@ -347,7 +353,8 @@ img {
   line-height: 29px;
 }
 
-.card__text, .card__info {
+.card__text,
+.card__info {
   margin: 0 0 24px;
   padding: 0;
 }
@@ -704,10 +711,10 @@ img {
   position: absolute;
   margin: 0;
   padding: 40px 100px 63px 35px;
-  Width: 386px;
+  width: 386px;
   top: 52px;
   left: 222px;
-  background-color: #F7FAFC;
+  background-color: #f7fafc;
   box-shadow: 0px 4px 40px rgba(217, 217, 217, 0.3);
   border-radius: 12px;
 }
@@ -743,7 +750,7 @@ img {
 
 footer {
   background-color: var(--main-text-color);
-  color: var(--text-color-white);;
+  color: var(--text-color-white);
 }
 
 .footer__wrapper {
